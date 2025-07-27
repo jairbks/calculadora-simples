@@ -1,27 +1,23 @@
-# 🧮 Calculadora Simples em Python e Shell
+# 🧮 Calculadora Simples
 
-Este projeto é uma calculadora simples desenvolvida em **Python** e **Bash (Shell Script)**.  
-Ela permite realizar operações básicas como:
-
-- Soma
-- Subtração
-- Multiplicação
-- Divisão
-
-O projeto também inclui um script `.sh` simplificado, que executa apenas a **soma** de dois números, usando comandos no terminal.
+Este é um projeto simples de uma calculadora feita em Python e Shell Script. Ele realiza operações básicas como soma, subtração, multiplicação e divisão.
 
 ---
 
 ## 📁 Arquivos do Projeto
 
-- `calculadora.py` — Código principal da calculadora em Python.
-- `executar.sh` — Script simplificado em Bash que realiza apenas a soma.
+- `calculadora.py`: Script principal da calculadora feito em Python.
+- `Calculadora.sh`: Versão simples em shell script que realiza uma soma.
+- `README.md`: Este arquivo com a documentação do projeto.
 
 ---
 
-## ▶️ Como executar o código Python
+## ▶️ Como Executar
 
-1. Verifique se o Python está instalado:
+### ✅ Executar a calculadora em Python
+
+No terminal do Ubuntu (WSL ou outro), vá até a pasta do projeto e digite:
 
 ```bash
-python3 --version
+python3 calculadora.py
+
