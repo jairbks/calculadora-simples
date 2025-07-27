@@ -1,19 +1,27 @@
-lógica programação
-curso de lógica de programação em python
+# 🧮 Calculadora Simples em Python e Shell
 
-Calculadora Simples em Python 🧮
-Este projeto contém uma calculadora simples desenvolvida em Python.
-Ela permite realizar as quatro operações básicas:
+Este projeto é uma calculadora simples desenvolvida em **Python** e **Bash (Shell Script)**.  
+Ela permite realizar operações básicas como:
 
-Soma
-Subtração
-Multiplicação
-Divisão
-Além disso, o projeto inclui um script .shque executa uma calculadora de forma automatizada no terminal Linux.
+- Soma
+- Subtração
+- Multiplicação
+- Divisão
 
-📁 Arquivos do projeto
-calculadora.py— Código principal da calculadora.
-executar.sh— Script shell que roda automaticamente a calculadora (versão resumida).
-▶️Como executar o arquivo Python
-Certifique-se de ter o Python instalado:
+O projeto também inclui um script `.sh` simplificado, que executa apenas a **soma** de dois números, usando comandos no terminal.
+
+---
+
+## 📁 Arquivos do Projeto
+
+- `calculadora.py` — Código principal da calculadora em Python.
+- `executar.sh` — Script simplificado em Bash que realiza apenas a soma.
+
+---
+
+## ▶️ Como executar o código Python
+
+1. Verifique se o Python está instalado:
+
+```bash
 python3 --version
