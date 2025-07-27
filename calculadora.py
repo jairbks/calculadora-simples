@@ -1,0 +1,39 @@
+
+def solicitar_numero(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Por favor, digite um número válido.")
+
+def solicitar_operacao():
+    operacoes = ['+', '-', '*', '/']
+    while True:
+        op = input("Escolha a operação (+, -, *, /): ")
+        if op in operacoes:
+            return op
+        else:
+            print("Operação inválida. Tente novamente.")
+
+def calcular(num1, num2, operacao):
+    if operacao == '+':
+        return num1 + num2
+    elif operacao == '-':
+        return num1 - num2
+    elif operacao == '*':
+        return num1 * num2
+    elif operacao == '/':
+        if num2 == 0:
+            return "Erro: divisão por zero!"
+        return num1 / num2
+
+def main():
+    print("Calculadora simples")
+    n1 = solicitar_numero("Digite o primeiro número: ")
+    n2 = solicitar_numero("Digite o segundo número: ")
+    op = solicitar_operacao()
+    resultado = calcular(n1, n2, op)
+    print(f"Resultado: {resultado}")
+
+if __name__ == "__main__":
+    main()

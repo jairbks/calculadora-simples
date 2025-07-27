@@ -1,3 +1,4 @@
+
 # 🧮 Projeto: Calculadora Simples
 
 Este projeto contém dois scripts que implementam uma calculadora básica:  
@@ -31,65 +32,96 @@ No terminal (Ubuntu, WSL ou outro sistema com Python 3 instalado), siga os passo
 
    ```bash
    cd "/mnt/c/Users/jair/Downloads/plano de carreira/Profissao Analista de Dados/logica-programa--o/calculadora simples/calculadora-simples"
+   ```
+
 2. Execute o script com Python 3:
 
-bash
-python3 calculadora.py
+   ```bash
+   python3 calculadora.py
+   ```
 
-4. O programa irá pedir:
-
-O primeiro número
-
-O segundo número
-
-A operação matemática que deseja realizar (+, -, * ou /)
+3. O programa irá pedir:  
+   - O primeiro número  
+   - O segundo número  
+   - A operação matemática que deseja realizar (`+`, `-`, `*` ou `/`)
 
 4. O resultado será exibido na tela.
 
-2. Executar o script Shell (Calculadora.sh)
+#### Exemplo de execução:
+
+```bash
+$ python3 calculadora.py
+Calculadora simples
+Digite o primeiro número: 10
+Digite o segundo número: 3
+Escolha a operação (+, -, *, /): /
+Resultado: 3.3333333333333335
+```
+
+---
+
+### 2. Executar o script Shell (`Calculadora.sh`)
 
 No terminal, estando na pasta do projeto, dê permissão para executar o script (apenas na primeira vez):
 
-bash
+```bash
 chmod +x Calculadora.sh
+```
 
 Execute o script:
 
-bash
+```bash
 ./Calculadora.sh
+```
 
 O script irá solicitar dois números e exibirá o resultado da soma deles.
 
-📝 Explicação dos códigos
-calculadora.py (Python)
-Recebe dois números do usuário via input().
+#### Exemplo de execução:
 
-Pergunta qual operação matemática o usuário deseja realizar: soma (+), subtração (-), multiplicação (*) ou divisão (/).
+```bash
+$ ./Calculadora.sh
+Calculadora simples
+Digite o primeiro número: 5.5
+Digite o segundo número: 2.3
+Resultado da soma: 7.8
+```
 
-Executa a operação escolhida, tratando divisão por zero, e imprime o resultado.
+---
 
-Calculadora.sh (Shell Script)
-Um script simples em Bash que:
+## 📝 Explicação dos códigos
 
-Solicita dois números do usuário.
+### `calculadora.py` (Python)
 
-Calcula a soma dos dois números usando a sintaxe soma=$((num1 + num2)).
+- Recebe dois números do usuário via `input()`.  
+- Pergunta qual operação matemática o usuário deseja realizar: soma (`+`), subtração (`-`), multiplicação (`*`) ou divisão (`/`).  
+- Executa a operação escolhida, tratando divisão por zero, e imprime o resultado.
 
-Exibe o resultado da soma.
+### `Calculadora.sh` (Shell Script)
 
-📌 Observações importantes
-O script Python é mais completo e interativo.
+- Um script simples em Bash que:  
+  - Solicita dois números do usuário.  
+  - Calcula a soma dos dois números usando a sintaxe `soma=$((num1 + num2))`.  
+  - Exibe o resultado da soma.
 
-O script Shell é uma versão simplificada focada apenas na operação de soma.
+---
 
-Os arquivos foram testados no ambiente Ubuntu via WSL no Windows.
+## 📌 Observações importantes
 
-É necessário ter o Python 3 instalado para rodar o script Python.
+- O script Python é mais completo e interativo.  
+- O script Shell é uma versão simplificada focada apenas na operação de soma.  
+- Os arquivos foram testados no ambiente Ubuntu via WSL no Windows.  
+- É necessário ter o Python 3 instalado para rodar o script Python.  
+- A conversão de formato de linha (LF vs CRLF) deve ser considerada ao editar scripts `.sh` no Windows para evitar erros.  
+- O script Shell usa o programa `bc` para lidar com números decimais. Certifique-se de que ele esteja instalado:
 
-A conversão de formato de linha (LF vs CRLF) deve ser considerada ao editar scripts .sh no Windows para evitar erros.
+```bash
+sudo apt-get install bc
+```
 
-👨‍💻 Autor
-Jair da Silva Santos
-Estudante de Análise de Dados
+---
+
+## 👨‍💻 Autor
+
+Jair da Silva Santos  
+Estudante de Análise de Dados  
 Feito com foco em aprendizado e prática!
-
